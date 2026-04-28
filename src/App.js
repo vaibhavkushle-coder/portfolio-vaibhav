@@ -1,25 +1,104 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+function App(){
+  return(
+  
+  
+    <div style={{
+      fontFamily:"Arial",
+      display:"flex",
+      justifyContent:"center",
+      alignItems:"center",
+      height:"100vh",
+      background:"linear-gradient(135deg,#667eea,#764ba2)"
+
+    }}>
+      <div style={{
+        background:"white",
+        padding:"25px",
+        borderRadius:"12px",
+        width:"350px",
+        boxShadow:"0 5px 15px rgba(0,0,0,0.9)",
+        animation:"fadeIn 0.8s ease"
+      }}>
+
+      <h1 style={{ marginBottom:"5px",textAlign:"center"}}>👋Hi,I'm Vaibhav</h1>
+      <p style={{marginBottom:"20px",textAlign:"center",color:"gray"}}>Web Developer (React)</p>
+
+<h2 style={{marginBottom:"10px"}}>💻Skills</h2>
+
+<div>
+  <span style={{background:"#eee",padding:"5px 10px",borderRadius:"5px"}}>HTML</span>
+  <span style={{background:"#eee",padding:"5px 10px",borderRadius:"5px"}}>CSS</span>
+  <span style={{background:"#eee",padding:"5px 10px",borderRadius:"5px"}}>JavaScript</span>
+  <span style={{background:"#eee",padding:"5px 10px",borderRadius:"5px"}}>React</span>
+</div>
+
+      <h2 style={{marginBottom:"10px"}}>🚀Projects</h2>
+
+      <div style={{
+        background:"#f9f9f9",                             
+        padding:"15px",
+        borderRadius:"10px",
+        marginBottom:"10px",
+        transition:"0.3s"
+      }}
+        onMouseEnter={(e)=>
+        e.currentTarget.style.transform="scale(1.03)"}
+        onMouseLeave={(e)=>
+        e.currentTarget.style.transform="scale(1)"}>
+
+          <h3>🧮Calculator App</h3>
+          <p>React Calculator with operator validation and decimals</p>
+
+          <p style={{
+            fontSize:"14px",
+            color:"gray",
+          }}>Features: Add, Subtract, Multiply, Divide, Backspace, Error handling</p>
+
+          <a
+          href="https://calculetor-indol.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
+          style={{
+            color:"blue",
+            textDecoration:"none",
+            fontWeight:"bold",
+            cursor:"pointer"
+          }}
+          onMouseEnter={(e)=>e.target.style.color="darkblue"}
+          onMouseLeave={(e)=>e.target.style.color="blue"}>
+          🔗Live Demo
+          </a>
+
+        <h3>📝Todo App</h3>
+        <p>React Todo App with LocalStorage, Filter,Search</p>
+
+        <p style={{fontSize:"14px",color:"gray",}}>Features: Add, Edit, Delete, filter, Search, LocalStorage</p>
+
+<p style={{fontSize:"13px",color:"red",fontWeight:"bold"}}>More projects coming soon...</p>
+
+        <a href="https://todo-app-gilt-ten-99.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          color:"blue",
+          textDecoration:"none",
+          fontWeight:"bold",
+          cursor:"pointer"
+        }}
+        onMouseEnter={(e)=>e.target.style.color="darkblue"}
+        onMouseLeave={(e)=>e.target.style.color="blue"}
         >
-          Learn React
+          🔗Live Demo
         </a>
-      </header>
+      </div>
+
+      <h2>📞 Contact</h2>
+      <p style={{color:"gray"}}>Email: rajakushle111@gmail.com</p>
+
+    </div>
     </div>
   );
 }
-
 export default App;
