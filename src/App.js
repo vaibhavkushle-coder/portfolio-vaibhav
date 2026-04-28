@@ -48,12 +48,35 @@ function App(){
         onMouseLeave={(e)=>
         e.currentTarget.style.transform="scale(1)"}>
 
+          <h3>🧮Calculator App</h3>
+          <p>React Calculator with operator validation and decimals</p>
+
+          <p style={{
+            fontSize:"14px",
+            color:"gray",
+          }}>Features: Add, Subtract, Multiply, Divide, Backspace, Error handling</p>
+
+          <a
+          href="https://calculetor-indol.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color:"blue",
+            textDecoration:"none",
+            fontWeight:"bold",
+            cursor:"pointer"
+          }}
+          onMouseEnter={(e)=>e.target.style.color="darkblue"}
+          onMouseLeave={(e)=>e.target.style.color="blue"}>
+          🔗Live Demo
+          </a>
+
         <h3>📝Todo App</h3>
         <p>React Todo App with LocalStorage, Filter,Search</p>
 
         <p style={{fontSize:"14px",color:"gray",}}>Features: Add, Edit, Delete, filter, Search, LocalStorage</p>
 
-<p style={{fontSize:"13px",color:"gray"}}>More projects coming soon...</p>
+<p style={{fontSize:"13px",color:"red",fontWeight:"bold"}}>More projects coming soon...</p>
 
         <a href="https://todo-app-gilt-ten-99.vercel.app/"
         target="_blank"
