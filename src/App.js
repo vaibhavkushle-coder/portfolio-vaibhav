@@ -94,7 +94,7 @@ function App(){
         </a>
       </div>
 
-      <h2>📞 Contact</h2>
+      <h2> 📞 Contact</h2>
       <p style={{color:"gray"}}>Email: rajakushle111@gmail.com</p>
 
     </div>
